@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    
+    <link rel="shortcut icon" href="images/bath.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black">
+    <div id="myscreen" style="z-index: 111;">
+        <div class="sk-cube-grid text-white">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <div id="side-bar" class="position-fixed h-100 z-3 bg-black d-inline-flex ">
+
+        <div id="side-bar-list" class=" h-100 pe-5 bg-black" style="width: 250px;">
+            <div class="w-100 h-75 pe-5">
+                <ul class="list-unstyled text-white  ">
+                    <li id="searchMealPage" class="m-3 pb-2 position-relative">Search</li>
+                    <li id="categoriesPage" class="m-3 pb-2 position-relative">Categories</li>
+                    <li id="areasPage" class="m-3 pb-2 position-relative">Areas</li>
+                    <li id="ingredientsPage" class="m-3 pb-2 position-relative">Ingredients</li>
+                    <li onclick="showForm()" id="contactPage" class="m-3 pb-2 position-relative">Contact Us</li>
+                </ul>
+            </div>
+            <div class="text-white h-25">
+                <div class="p-2">
+                    <i class="me-2 fa-brands fa-facebook"></i>
+                    <i class="me-2 fa-brands fa-twitter"></i>
+                    <i class="me-2 fa-solid fa-globe"></i>
+                </div>
+                <p class="text-white position-relative p-2 bottom-0">Copyright Â© 2019 All RightsReserved.</p>
+            </div>
+
+
+
+        </div>
+        <div id="side-bar-icon"
+            class="bg-white d-inline-flex flex-column justify-content-between px-2 align-items-center h-100">
+            <div class="mt-4">
+                <img src="images/bath.png" class="" style="width: 60px;" alt="">
+
+            </div>
+            <div id="bar-icon">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </div>
+            <div class="mb-4">
+                <div class="m-0">
+                    <i class="fa-2x fa-solid fa-globe d-block"></i>
+
+                </div>
+                <div class="m-0">
+
+                    <i class="fa-2x fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row g-4 mb-4 " id="mySearchRow">
+            <div class="col-md-6">
+                <input id="searchByName" onkeyup="getDataByName(this.value)"
+                    class="form-control bg-black border-white text-white w-100" placeholder="Search by Name"
+                    type="text">
+            </div>
+            <div class="col-md-6">
+                <input id="searchByLetter" onkeyup="getDataByLetter(this.value)"
+                    class="form-control bg-black border-white text-white w-100" placeholder="Search by Letter"
+                    maxlength="1" type="text">
+            </div>
+        </div>
+        <div class="row g-4" id="myRow">
+            <!-- <div class="col-lg-3 col-md-4">
+                <div class="item position-relative">
+                    <img src="images/img3.png" class="w-100 h-100 rounded-3" alt="">
+                    <div class="item-abs" >
+                        <h1>title</h1>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <div id="formContent">
+
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
